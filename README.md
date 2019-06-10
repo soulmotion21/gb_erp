@@ -1,16 +1,16 @@
 ## Full Stack erp app by Spring Boot, React.
 
-## How to setup back-end app (erp-app-server)
-First go to the `erp-app-server` folder -
+## How to setup back-end app (app-server)
+First go to the `app-server` folder -
 ```bash
-cd erp-app-server
+cd app-server
 ```
 
-## How to setup back-end app (erp-app-client)
+## How to setup back-end app (app-client)
 
-First go to the `erp-app-client` folder -
+First go to the `app-client` folder -
 ```bash
-cd erp-app-client
+cd app-client
 ```
 
 Then type the following command to install the dependencies and start the application -
