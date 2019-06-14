@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, About, Login, Error } from 'pages';
-import Menu from 'components/menu/Menu';
+import { Home, About, Login, Error } from '../pages/index';
+import Menu from '../components/menu/Menu';
 
 class App extends Component {
   render() {
