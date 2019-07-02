@@ -326,11 +326,18 @@ label {
 }
 
 .select {
-  position: relative;
-  display: inline-block;
-  min-width: 130px;
-  line-height: 30px;
-  background: #fff;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 95px;
+  height: 37px;
+  line-height: 37px;
+  background: #eff1f9;
+  border: 0;
+}
+.select:focus {
+  outline:0;
+  border:0;
 }
 
 .select:after {
