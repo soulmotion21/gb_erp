@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -26,9 +27,22 @@ module.exports = {
        ],
        plugins: ['react-hot-loader/babel']
       }
+    }, {
+     test:  /\.css$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        'css-loader'
+      ]
+    }, {
+      test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: 'url-loader',
+      options: {
+        name: '[hash].[ext]',
+        limit: 10000,
+      }
     }]
   },
-  plugins: [],
+  plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
   output: {
     filename: "app.js",
     path: path.join(__dirname, 'dist'),
