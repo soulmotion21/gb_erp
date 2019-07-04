@@ -1,0 +1,114 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wiki PageList</title>
+  <link rel="stylesheet" href="src/resources/css/style.css">
+  <style>
+    .wrapper {
+      padding-left: 50px
+    }
+    @media all and (max-width: 768px) {
+      .wrapper {
+        padding: 10px;
+        padding-top: 50px;
+      }
+    }
+    .wrap_contents{
+      padding: 50px;
+    }
+    @media all and (max-width: 768px) {
+      .wrap_contents{
+        padding: 10px;
+      }
+    }
+    table {
+      width: 100%;
+    }
+    table td,
+    table th {
+      text-align: center;
+    }
+    table th,
+    table td {
+      height: 40px;
+      border-bottom: #999 1px solid;
+    }
+    table th {
+      background: #dcdde2;
+    }
+    table td {
+      background: #fff;
+    }
+    table td:nth-child(1) {
+      text-align: center;
+    }
+    @media all and (max-width: 560px) {
+      table td:nth-child(1) {
+        text-align: left;
+        padding-left: 20px;
+      }
+      table td a {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <!-- wrap_header -->
+  <div class="wrap_header">
+    <div class="area_logo"></div>
+  </div>
+  <!-- // wrap_header -->
+
+  <div class="wrap_contents">
+    <table>
+      <colgroup>
+        <col style="width: 50%">
+        <col style="width: 50%">
+      </colgroup>
+      <thead>
+      <tr>
+        <th>페이지 명</th>
+        <th>상태</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="main.html">메인 페이지</a></td>
+        <td>O</td>
+      </tr>
+      <tr>
+        <td><a href="myinfo.html">My Info > 개인</a></td>
+        <td>O </td>
+      </tr>
+      <tr>
+        <td><a href="myinfo_dayoff.html">My Info > 연차내역</a></td>
+        <td>O </td>
+      </tr>
+      <tr>
+        <td><a href="employee.html">사원목록</a></td>
+        <td>O</td>
+      </tr>
+      <tr>
+        <td><a href="login.html">로그인</a></td>
+        <td>O</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+
+
+<!--<script>-->
+  <!--window.location.href="views_html/main.html"-->
+<!--</script>-->
+
+</body>
+</html>
+
+
