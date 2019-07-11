@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/**
+  * employee
+  */
+.box_employee_search {
+    position: relative;
+    width: 600px;
+}
+.box_employee_search .form-control {
+    padding-right: 40px;
+}
+.box_employee_search a {
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 14px;
+}
+.list_employee {
+    padding-top: 50px;
+}
+.list_employee ul li {
+    position: relative;
+    padding-left: 60px;
+    height: 80px;
+}
+.list_employee ul li .box_pic {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    background: #c6cacf;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 50px;
+}
+.list_employee ul li .box_pic  img {
+    width: auto;
+    height: 100%;
+}
+.list_employee ul li .box_name,
+.list_employee ul li .box_info {
+    display: inline-block;
+    width: 300px;
+}
+.list_employee ul li .box_name p {
+    color: #1c1837;
+    font-size: 2rem;
+}
+.list_employee ul li .box_name span,
+.list_employee ul li .box_info p {
+    font-size: 1.8rem;
+}
+.list_employee .employee_group {
+    height: 40px;
+    border: #eff1f9 1px solid;
+    line-height: 38px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #37d1d1;
+    font-size: 1.8rem;
+}
+
+.box_vacation {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background: #5d48ed;
+    text-align: center;
+    border-radius: 10px;
+}
+.box_vacation p {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 50px;
+}
+
+.box_vacation p i {
+    color: #fff;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+.box_vacation .vacation_days {
+    display: inline-block;
+    color: #fff;
+    font-size: 8.5rem;
+    line-height: 97px;
+    letter-spacing: -3px;
+}

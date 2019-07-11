@@ -25,14 +25,25 @@ module.exports = {
          }],
          '@babel/preset-react'
        ],
-       plugins: ['react-hot-loader/babel']
+       plugins: ['react-hot-loader/babel', [
+         "@babel/plugin-proposal-class-properties", {
+           "loose": true
+         }
+       ]]
       }
     }, {
      test:  /\.css$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        'css-loader'
-      ]
+      use: [{
+       loader: 'style-loader'
+      }, {
+       loader: 'css-loader',
+        options:{
+          sourceMap: true,
+          modules: {
+            localIdentName: '[local]'
+          }
+        }
+      }]
     }, {
       test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
       loader: 'url-loader',
@@ -47,5 +58,8 @@ module.exports = {
     filename: "app.js",
     path: path.join(__dirname, 'dist'),
     publicPath: '/dist/'
+  },
+  devServer: {
+    historyApiFallback: true,
   }
 };

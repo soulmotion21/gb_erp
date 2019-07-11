@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../../resources/css/Main.module.css';
 
 class Home extends Component {
   render() {
@@ -76,7 +77,7 @@ class Home extends Component {
                   <div className="box_branch">GBC Korea</div>
                 </li>
                 <li>
-                  <span className="box_pic"><img src="../resources/img/img4.jpg" alt=""/></span>
+                  <span className="box_pic"><img src="../resources/img/img4.png" alt=""/></span>
                   <div className="box_name">
                     <p>Josh Nirav</p>
                     <span>Project manager</span>

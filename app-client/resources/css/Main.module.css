@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+
+/**
+  * main page
+  */
+.card_section.card_top_info {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 15px;
+}
+.card_section.card_top_info .box_icon {
+    width: 60px;
+    height: 60px;
+    background: #faa113;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+    padding-top: 17px;
+}
+.card_section.card_top_info .box_icon.icon_vacation {
+    background: #f22f5a;
+}
+.card_section.card_top_info .box_icon svg {
+    color: #fff;
+    font-size: 2.2rem;
+}
+.card_section.card_top_info .box_icon svg path {
+    fill: #fff;
+}
+.card_section.card_top_info .box_numbers p {
+    color: #364852;
+    font-size: 2.5rem;
+}
+
+.card_main_notice ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.card_todo ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.card_entry ul li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 15px;
+}
+.card_entry ul li .box_pic {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    background: #c2c2cc;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 50px;
+}
+.card_entry ul li .box_pic  img {
+    width: auto;
+    height: 100%;
+}
+.card_entry ul li .box_name {
+    display: inline-block;
+}
+.card_entry ul li .box_name p {
+    color: #1c1837;
+    font-size: 1.8rem;
+}
+.card_entry ul li .box_branch {
+    float: right;
+    line-height: 50px;
+}
+.card_meet_room h3 {
+    height: 43px;
+}
+
+.section_form {
+    width: 720px;
+}

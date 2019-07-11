@@ -19,7 +19,7 @@
 }
 .area_left .box_info {
     height: 450px;
-    background: url(/dist/85b35d367ad98bc305c5101ed97a074a.jpg) 0 0 no-repeat;
+    background: url("../../resources/img/profile-bg.jpg") 0 0 no-repeat;
     padding: 245px 0 0;
 }
 .area_left .box_info .pic {
@@ -54,6 +54,12 @@
     text-align: center;
     justify-content: space-around;
     align-items: center;
+}
+.area_left .vacant .btn_vacant a svg {
+    margin-right: 5px;
+}
+.area_left .vacant .btn_vacant a svg path {
+    fill: #fff;
 }
 .area_left .vacant .vacant_days span {
     font-size: 1.6rem;
@@ -135,3 +141,15 @@
     color: #c6cacf;
 }
 
+/**
+ * myinfo Left
+ */
+.area_left .info {
+    padding: 0 10px 0 100px;
+}
+.area_left .info li i {
+    font-size: 1rem;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #a8aaae;
+}
