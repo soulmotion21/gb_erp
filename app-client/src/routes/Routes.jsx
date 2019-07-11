@@ -4,22 +4,23 @@ import {Home, MyInfo, Employees} from '../pages/index';
 import TopUser from '../components/top/TopUser';
 import TopLogo from "../components/top/TopLogo";
 import TopNotification from "../components/top/TopNotification";
+import Header from '../../resources/css/Header.module.css';
 
 class Routes extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className='area_top'>
+        <div className={Header.area_top}>
           <TopLogo/>
-          <div className="box_navi">
+          <div className={Header.box_navi}>
             <div>
-              <NavLink exact to="/" activeClassName="active"><i className="fa fa-desktop"></i>Dashboard</NavLink>
-              <NavLink to="/MyInfo" activeClassName="active"><i className="fas fa-user-circle"></i> My info</NavLink>
-              <NavLink to="/Employees" activeClassName="active"><i className="fas fa-users"></i> Employees</NavLink>
+              <NavLink exact to="/" activeClassName={Header.active}><i className="fa fa-desktop"></i> Dashboard</NavLink>
+              <NavLink to="/MyInfo" activeClassName={Header.active}><i className="fas fa-user-circle"></i> My info</NavLink>
+              <NavLink to="/Employees" activeClassName={Header.active}><i className="fas fa-users"></i> Employees</NavLink>
             </div>
           </div>
 
-          <div className='box_user'>
+          <div className={Header.box_user}>
             <TopNotification/>
             <TopUser/>
           </div>

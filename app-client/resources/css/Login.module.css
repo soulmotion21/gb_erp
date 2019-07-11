@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-/**
- * common css
- * 작성자 : 김성규
- */
-
 .wrapper.wrapper_login {
   display: -ms-flexbox;
   display: flex;
