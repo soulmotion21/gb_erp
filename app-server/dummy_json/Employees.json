@@ -1,0 +1,12 @@
+[
+    {"A":[
+        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
+        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
+        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
+        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"}
+    ]},
+    {"B":[
+        {"name":"Bilee", "job":"Junior Develper", "email":"bilee@gbc.com", "cellphone":"+82 10 1234-5678"},
+        {"name":"Bilee", "job":"Junior Develper", "email":"bilee@gbc.com", "cellphone":"+82 10 1234-5678"},
+    ]}
+]
