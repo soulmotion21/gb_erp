@@ -8,7 +8,7 @@ class Personal extends Component {
           <h3>Basic Info</h3>
         </div>
 
-        <span className="btn_info_modify"><a href="#"><i className="im im-pencil"></i>modify</a></span>
+        <span className="btn_info_modify"><a href="#"><i className="fas fa-pen"></i>modify</a></span>
 
         <div className="card_body">
 
