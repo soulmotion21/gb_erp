@@ -1,0 +1,14 @@
+{
+    "name":{
+        "first":"Sungkyu",
+        "last":"Kim"
+    },
+    "birth":"01/01/1919",
+    "gender":"Male",
+    "addr1":"",
+    "addr2":"",
+    "email":"dkim@gbc.com",
+    "cellphone":"+82 10 9876-5432",
+    "hiredate":"01/01/2018",
+    "title":"Senior front-end developer"
+}
