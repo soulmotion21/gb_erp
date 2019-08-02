@@ -8,7 +8,7 @@ class Root extends Component {
     return (
       <div className='wrapper'>
         <Routes />
-        <Left/>
+        <Left />
         <Footer />
       </div>
     );

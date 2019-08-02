@@ -7,7 +7,7 @@ class MyInfoTabContents extends Component {
     super(props);
   };
 
-  render(props) {
+  render() {
     switch (this.props.tabIndex) {
       case '0':
         return(

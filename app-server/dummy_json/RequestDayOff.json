@@ -1,0 +1,12 @@
+{
+    "left":17.0,
+    "log":[
+        {"rows":["date", "description", "used", "balance"]},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17},
+        {"date":"01/01/2019", "description":"Vacation days", "used":1, "balance": 17}
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "today_att":16,
+    "today_off":2,
+    "notice":[
+        {"rows":["title", "date"]},
+        {"title":"Access to the GBC group was granted", "date":"07-02"},
+        {"title":"Hyperledger Fabric Global Forum 2019", "date":"06-29"},
+        {"title":"Smart Contract Visualization", "date":"06-25"},
+        {"title":"IoT Graph development", "date":"06-17"},
+        {"title":"Weekly meeting agenda - 2019/06/17", "date":"06-11"}
+    ],
+    "todo_list":[
+        {"rows":["todo", "in", "weight"]},
+        {"todo":"Check out flight ticket", "in":"2 days", "weight":""},
+        {"todo":"Hit the gym", "in":"1 hour", "weight":""},
+        {"todo":"Send marketing report", "in":"", "weight":"not important"},
+        {"todo":"Commit modified pages", "in":"tomorrow", "weight":""},
+        {"todo":"Commit modified pages", "in":"tomorrow", "weight":""}
+    ],
+    "members":[
+        {"rows":["name", "job", "affiliation"]},
+        {"name":"Sunny Kim", "job":"Web designer", "affiliation":"GBC Korea"},
+        {"name":"Josh Nirav", "job":"Project manager", "affiliation":"GBC Canada"},
+        {"name":"Bhavesh Patel", "job":"Data science", "affiliation":"GBC Canada"},
+        {"name":"Hezekiah Bacovcin", "job":"Developer", "affiliation":"GBC Canada"}
+    ],
+    "mr_status":[
+        {"rows":["no", "status", "start", "end"]},
+        {"no":"Meeting room #1", "status":"Unavailable", "start":"11:00","end":"13:00"},
+        {"no":"Meeting room #2", "status":"Available", "start":"","end":""},
+        {"no":"Meeting room #3", "status":"Unavailable", "start":"09:00","end":"10:30"},
+        {"no":"Meeting room #4", "status":"TBD", "start":"","end":""},
+        {"no":"Meeting room #5", "status":"Unavailable", "start":"16:00","end":"16:30"}
+    ]
+}

@@ -1,5 +1,4 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -29,7 +28,7 @@ module.exports = {
          "@babel/plugin-proposal-class-properties", {
            "loose": true
          }
-       ]]
+       ], '@babel/plugin-syntax-dynamic-import']
       }
     }, {
      test:  /\.css$/,
@@ -53,13 +52,15 @@ module.exports = {
       }
     }]
   },
-  plugins: [new MiniCssExtractPlugin({ filename: 'app.css' })],
+  plugins: [],
   output: {
     filename: "app.js",
     path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/'
+    publicPath: 'dist/'
   },
   devServer: {
+    host: 'localhost',
     historyApiFallback: true,
+    hot: true
   }
 };
