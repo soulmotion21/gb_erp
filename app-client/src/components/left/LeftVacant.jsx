@@ -9,9 +9,28 @@ class LeftVacant extends Component {
   constructor(props){
     super(props);
     this.state = {
-      showPopup: false
+      error: null,
+      isLoaded: false,
+      showPopup: false,
+      infos: {}
     };
   };
+
+  componentDidMount() {
+    fetch('./src/dummy_json/LeftVacant.json')
+      .then(res => res.json())
+      .then((result) => {
+        this.setState({
+          isLoaded: true,
+          infos: result
+        });
+      }, (error) => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
+  }
 
   onClickRequest = e => {
     e.preventDefault();
@@ -22,20 +41,30 @@ class LeftVacant extends Component {
 
   render() {
     const parentPage = 'leftVacant';
+    const { error, isLoaded, infos } = this.state;
 
-    return (
-      <div className={left.vacant}>
-        <div className={left.vacant_days}>
-          <span>vacation(days)</span>
-          <p>17.0</p>
-        </div>
-        <div className={left.btn_vacant}>
-          <a href="#" className='btn btn-violet btn-lg'
-             onClick={this.onClickRequest}><i className="fas fa-paper-plane" />Request day off</a>
-        </div>
-        {this.state.showPopup ? <PopupVacation parentPage={parentPage} closePopup={this.onClickRequest.bind(this)}/> : null}
-      </div>
-    );
+    if (error) {
+      return <div>Error : {error.message}</div>
+    } else {
+      if (!isLoaded) {
+        return <div>Loading...</div>;
+      } else {
+        return (
+          <div className={left.vacant}>
+            <div className={left.vacant_days}>
+              <span>vacation(days)</span>
+              <p>{infos.left}</p>
+            </div>
+            <div className={left.btn_vacant}>
+              <a href="#" className='btn btn-violet btn-lg'
+                 onClick={this.onClickRequest}><i className="fas fa-paper-plane"/>Request day off</a>
+            </div>
+            {this.state.showPopup ?
+              <PopupVacation parentPage={parentPage} closePopup={this.onClickRequest.bind(this)}/> : null}
+          </div>
+        );
+      }
+    }
   }
 }
 

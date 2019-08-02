@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DatePicker from 'react-datepicker';
+import DatePicker from 'react-datepicker'; // https://reactdatepicker.com
 import moment from 'moment';
 import popup from '../../../resources/css/Popup.module.css';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -89,7 +89,7 @@ class PopupVacation extends Component {
             </form>
           </div>
           <div className='popup_btn'>
-            <a href="#" className='btn btn- orange' onClick={this.props.closePopup}>close</a>
+            <a href="#" className='btn btn-orange' onClick={this.props.closePopup}>close</a>
           </div>
         </div>
 
