@@ -17,7 +17,7 @@ class LeftVacant extends Component {
   };
 
   componentDidMount() {
-    fetch('./src/dummy_json/LeftVacant.json')
+    fetch('./src/temp_json/LeftVacant.json')
       .then(res => res.json())
       .then((result) => {
         this.setState({

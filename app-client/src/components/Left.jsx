@@ -14,20 +14,24 @@ class Left extends Component {
   };
 
   componentDidMount() {
-    fetch('./src/dummy_json/LeftVacant.json')
-      .then(res => res.json())
-      .then((result) => {
-        this.setState({
-          isLoaded: true,
-          infos: result
-        });
-      }, (error) => {
-        this.setState({
-          isLoaded: true,
-          error
-        });
+    this.callApi().then(result => {
+      this.setState({
+        isLoaded: true,
+        infos: result
       });
+    }, (error) => {
+      this.setState({
+        isLoaded: true,
+        error
+      });
+    });
   }
+
+  callApi = async () => {
+    const response = await fetch('./src/temp_json/LeftVacant.json');
+    const body = await response.json();
+    return body;
+  };
 
 
   render() {
