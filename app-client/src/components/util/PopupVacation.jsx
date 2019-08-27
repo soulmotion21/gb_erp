@@ -83,13 +83,17 @@ class PopupVacation extends Component {
               </div>
               <p>Amount</p>
               <div className='adjust_days'>
-                <div><span id='amountStart'></span><input type="text" className='' ref={this.onRefInput} value={this.state.diffDays} onChange={(e) => this.setState({diffDays: e.target.value})} /><span>days</span></div>
-                <div><span id='amountEnd'></span><input type="text" className='' /><span>days</span></div>
+                <div>
+                  <span id='amountStart'></span>
+                  <input type="text" className='text_time_off' ref={this.onRefInput} value={this.state.diffDays}
+                         onChange={(e) => this.setState({diffDays: e.target.value})} readOnly /><span>days</span>
+                </div>
               </div>
             </form>
           </div>
           <div className='popup_btn'>
-            <a href="#" className='btn btn-orange' onClick={this.props.closePopup}>close</a>
+            <a href="#" className='btn btn-gray' onClick={this.props.closePopup}>close</a>
+            <a href="#" className='btn btn-orange'>send</a>
           </div>
         </div>
 
