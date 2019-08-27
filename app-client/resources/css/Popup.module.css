@@ -38,6 +38,9 @@
 .popup_btn {
     text-align: center;
 }
+.popup_btn .btn {
+    margin: 0 3px 0 0;
+}
 .react-datepicker__input-container input[type='text'] {
     font-size: 1.4rem;
     height: 30px;
@@ -50,4 +53,17 @@
 }
 .adjust_days {
     background: #f6f6f6;
+    padding: 10px;
 }
+
+.adjust_days input[type='text'] {
+    background: #f6f6f6;
+    border: 0;
+    width: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+.adjust_days input[type='text']:focus {
+    outline: 0;
+}
+
