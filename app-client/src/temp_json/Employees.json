@@ -1,12 +1,48 @@
 [
-    {"A":[
-        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
-        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
-        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"},
-        {"name":"Ailee", "job":"Junior Develper", "email":"ailee@gbc.com", "cellphone":"+82 10 1234-5678"}
-    ]},
-    {"B":[
-        {"name":"Bilee", "job":"Junior Develper", "email":"bilee@gbc.com", "cellphone":"+82 10 1234-5678"},
-        {"name":"Bilee", "job":"Junior Develper", "email":"bilee@gbc.com", "cellphone":"+82 10 1234-5678"},
-    ]}
+  {
+    "section": "A",
+    "list": [
+      {
+        "name": "Ailee",
+        "job": "Junior Develper",
+        "email": "ailee@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      },
+      {
+        "name": "Ailee1",
+        "job": "Junior Develper",
+        "email": "aileee@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      },
+      {
+        "name": "Ailee2",
+        "job": "Junior Develper",
+        "email": "aileea@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      },
+      {
+        "name": "Ailee3",
+        "job": "Junior Develper",
+        "email": "aileec@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      }
+    ]
+  },
+  {
+    "section": "B",
+    "list": [
+      {
+        "name": "Bilee1",
+        "job": "Junior Develper",
+        "email": "bilee@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      },
+      {
+        "name": "Bilee2",
+        "job": "Junior Develper",
+        "email": "bileea@gbc.com",
+        "cellphone": "+82 10 1234-5678"
+      }
+    ]
+  }
 ]
